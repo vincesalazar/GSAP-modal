@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: rgb(23, 23, 39);
+}
+
+body::-webkit-scrollbar {
+    width: 0px;
+}
+
+.hero {
+    background-image: url('../images/creative-wood.png');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+.hero .overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    min-height: 100vh;
+    min-width: 100vw;
+    background-color: #0000009a;
+}
+
+.hero .registerForm {
+    position: absolute;
+    top: 1;
+    left: 1;
+    right: 1;
+    bottom: 1;
+    background-color: #EFE9F4;
+    padding: 1rem;
+    z-index: 2;
+    border-radius: 2px;
+    display: none;
+}
+
+.registerForm #close-button {
+    cursor: pointer;
+}
+
+.registerForm form {
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    justify-content: center;
+    align-items: center;
+    color: #131515;
+}
+
+.registerForm form h2 {
+    margin-top: 0;
+    font-size: 1.7rem;
+    letter-spacing: 2px;
+    font-family: 'Libre Baskerville', serif;
+}
+
+.registerForm form label {
+    font-family: 'Averia Serif Libre', cursive;
+    margin-bottom: .5rem;
+}
+
+.registerForm form label input[type=text],
+input[type=password],
+input[type=email] {
+    border: none;
+    padding: .2rem;
+}
+
+.registerForm form label input[type=text],
+input[type=password],
+input[type=email]:focus {}
+
+.registerForm form input[type=submit] {
+    border: #66C3FF .95px solid;
+    padding: .5rem;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    margin-top: .5rem;
+}
+
+.registerForm form input[type=submit]:hover {
+    border: #66C3FF 1px solid;
+    cursor: pointer;
+}
+
+.hero .logo {
+    position: absolute;
+    top: 1vh;
+    left: 1vw;
+    cursor: default;
+    font-size: 2rem;
+    color: white;
+    font-family: 'Libre Baskerville', serif;
+    letter-spacing: 3px;
+}
+
+.hero h2 {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 40px;
+    letter-spacing: 2px;
+    color: white;
+    font-weight: 500;
+    z-index: 1;
+}
+
+.hero h5 {
+    margin-top: 0;
+    font-size: 20px;
+    color: rgb(232, 232, 255);
+    font-family: 'Averia Serif Libre', cursive;
+    font-variant: small-caps;
+    font-weight: 400;
+    z-index: 1;
+}
+
+.hero .hero-link {
+    display: block;
+    border: #66C3FF .95px solid;
+    color: rgb(233, 233, 233);
+    text-decoration: none;
+    padding: 1rem;
+    z-index: 1;
+    /* font-family: 'Pacifico', cursive; */
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1rem;
+}
+
+.hero .hero-link:hover {
+    border: #66C3FF 1px solid;
+    color: white;
+    cursor: pointer;
+}
